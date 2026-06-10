@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título da página-->
+    <title>Patricia Takagi-Portfólio</title>
+    <!--link de referencia ao arquivo de CSS externo-->
+    <link rel="stylesheet" href="style.css">
+     <script src="script.js"></script>
+</head>
+<body>
+    <!--Cabeçalho da página-->
+    <header class="container">
+        <h1>Patrícia Ayumi Takagi</h1>
+        <br>
+    </header>
+
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+   <div class="container wrapper">
+    <aside class="area_foto">
+        <img class="contato" src="images/e-mail.jpg" alt="Foto contato" >
+    </aside>
+    <section class="principal">
+        <h1>Contato</h1>
+       <form id="formContato" action="" method="POST">
+          <table>
+            <tr>
+                <th><label for="nome">Nome:</label></th>
+                <td><input type="text" name="nome" id="nome"></td>
+            </tr>
+            <tr>
+                <th><label for="email">E-mail</label></th>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+             <tr>
+                <th><label for="msg">Digite sua mensagem:</label></th>
+                <td><textarea name="msg" id="mensagem" rows="15" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="button" onclick="enviarFormulario()" >Enviar</button></td>
+            </tr>
+          </table>
+       </form>
+    </section>
+   </div>
+
+   <footer class="container">
+    <h1>Desenvolvido por Patricia Takagi-ptakagiayumi@gmail.com</h1>
+   </footer>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2661;
+   
+}
+
+/*define container como Grid*/
+.container{
+    display:grid;
+}
+/*Grid do cabeçalho inicia na coluna 1 e termina na coluna 12, cor de fundo blue*/
+header{
+    grid-column-start:1;
+    grid-column-end:12;
+    background-color: #826006;
+    font-size: 20px; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+} 
+
+
+/*Grid do menu*/
+.menu{
+    grid-column-start:6;
+    grid-column-end:12;
+    justify-content: center;
+    gap: 20px;
+    
+    
+
+}
+ .area_foto{
+    grid-column-start:1;
+    grid-column-end:3; 
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-top:60px;
+    padding-bottom: 30px;
+    
+    
+
+}
+.principal{
+    grid-column-start:4;
+    grid-column-end:12;
+    padding-left: 50px; 
+    padding-right:100px;
+    padding-top: 35px;
+    text-align: justify;
+    
+}
+.card{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+footer{
+    grid-column-start:1;
+    grid-column-end:12 ;
+    background-color: #826006;;
+    color: white;
+    font-size: 7px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style-type: none; /*remove o marcador */
+    width:450px;
+    }
+
+
+a:link{
+    text-decoration: none;
+    padding:8px 16px;
+    border: solid black 1px;
+    background-color: #E8C668;
+}
+li{
+    float:left;
+}
+.minha_foto{
+    border-style: solid;
+    border-radius: 50%;
+    width: 350px;
+    height: auto;
+   
+}
+.formacao{
+    border-style: solid;
+    border-radius:15px;
+    width: 350px;
+    height: auto;
+}
+.contato{
+    border-style: solid;
+    border-radius:15px;
+    width: 350px;
+    height: auto;
+}
+
+.foto_portfolio{
+    border-style: solid;
+    border-radius:15px;
+    width: 350px;
+    height: auto;
+}
+
+
+a:hover{
+    background-color: #826006;
+    color: white;
+    }
+.img{
+    border: 1px solid #E8C668 ;
+    border-radius: 1rem;
+    padding:0.8rem;
+    margin-bottom: 0.8rem;
+    max-width:19rem;
+    margin:1rem;
+    
+}
+.img img{
+    width: 290px;
+    height:250px;
+    border-style: solid;
+    border-color: #826006;
+   
+}
+
+@media all and(min-width:35rem){
+    body{
+        margin:0 auto;
+    }
+}
+
+
+@media only screen and (max-width:767px){
+    .wrapper{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    .area_foto{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    .principal{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+}
+
