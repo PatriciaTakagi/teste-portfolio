@@ -50,8 +50,8 @@ header{
 .principal{
     grid-column-start:4;
     grid-column-end:12;
-    padding-left: 100px; 
-    padding-right:250px;
+    padding-left: 60px; 
+    padding-right:120px;
     padding-top: 35px;
     text-align: justify;
   
