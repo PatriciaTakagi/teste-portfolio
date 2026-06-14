@@ -1,20 +1,18 @@
+/*Arquivo de estilos CSS da página*/
+
+/*Estilizando o corpo da página, definindo margem, tipo e cor da fonte*/
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #1f2661;
-    
-   
+    color: #1f2661;  
 }
 
-/*define container como Grid*/
+/*Definindo o container como Grid*/
 .container{
-    display:grid;
-    
-    
+    display:grid;  
 }
 
-
-/*Grid do cabeçalho inicia na coluna 1 e termina na coluna 12, cor de fundo blue*/
+/*Definições do grid do cabeçalho da página e etilos para cor de fundo, fonte e alinhamento de texto*/
 header{
     grid-column-start:1;
     grid-column-end:12;
@@ -25,28 +23,25 @@ header{
     text-align: center;
 } 
 
-
-/*Grid do menu*/
+/*Definições do grid do menu de navegação e alinhamento do menu*/
 .menu{
     grid-column-start:6;
     grid-column-end:12;
     justify-content: center;
-    gap: 20px;
-    
-    
-
+    gap: 20px; 
 }
- .area_foto{
+
+/*Definições do grid e padding para área lateral esquerda que contem imagem*/
+ .area_imagem{
     grid-column-start:1;
     grid-column-end:3; 
     padding-left: 25px;
     padding-right: 15px;
     padding-top:50px;
     padding-bottom: 30px;
-    
-    
-
 }
+
+/*Definições do grid, padding e alinhamento do texto do conteúdo principal */
 .principal{
     grid-column-start:4;
     grid-column-end:12;
@@ -54,13 +49,15 @@ header{
     padding-right:100px;
     padding-top: 35px;
     text-align: justify;
-  
 }
+
+/*Definição do elemento card como um container flexivel, direção dos itens como coluna e quebra de linha*/
 .card{
     display: flex;
     flex-flow: column wrap;
 }
 
+/*Definições do grid para o rodapé e estilos de cor de fundo, fonte e alinhamento de texto*/
 footer{
     grid-column-start:1;
     grid-column-end:12 ;
@@ -70,41 +67,49 @@ footer{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 ul{
-    list-style-type: none; /*remove o marcador */
+    list-style-type: none; /*no menu, remove o marcador padrão dos itens da lista */
     width:450px;
     }
 
-
+/*Definição de estilos para os links do menu(padding, borda, cor de fundo e retirar sublinhado do texto*/
 a:link{
-    text-decoration: none;
+    text-decoration: none; 
     padding:8px 16px;
     border: solid black 1px;
     background-color: #E8C668;
 }
+
 li{
     float:left;
 }
+
+/*Definição de estilos de borda e tamanho para foto lateral da página index.html*/
 .minha_foto{
     border-style: solid;
     border-radius: 50%;
     width: 350px;
     height: auto;
-   
 }
-.formacao{
-    border-style: solid;
-    border-radius:15px;
-    width: 350px;
-    height: auto;
-}
-.contato{
+
+/*Defininição de estilos de borda e tamanho para foto lateral da página formacao.html*/
+.foto_formacao{
     border-style: solid;
     border-radius:15px;
     width: 350px;
     height: auto;
 }
 
+/*Definição de estilos de borda e tamanho para foto lateral da página contato.html*/
+.foto_contato{
+    border-style: solid;
+    border-radius:15px;
+    width: 350px;
+    height: auto;
+}
+
+/*Definição de estilos de borda e tamanho para foto lateral da página portfolio.html*/
 .foto_portfolio{
     border-style: solid;
     border-radius:15px;
@@ -112,20 +117,23 @@ li{
     height: auto;
 }
 
-
+/*Definição de efeitos ao passar o mouse sobre as opções do menu*/
 a:hover{
     background-color: #826006;
     color: white;
-    }
+}
+
+/*Definição de estilos para caixa das imagens dos cards da página portfolio.html*/
 .img{
     border: 1px solid #E8C668 ;
     border-radius: 1rem;
     padding:0.8rem;
     margin-bottom: 0.8rem;
     max-width:19rem;
-    margin:1rem;
-    
+    margin:1rem;  
 }
+
+/*Definição de estilos para as imagens que ficam dentro das caixas dos cards na página portfolio.html*/
 .img img{
     width: 290px;
     height:250px;
@@ -140,13 +148,14 @@ a:hover{
     }
 }
 
-
+/*resposividade para telas pequenas */
 @media only screen and (max-width:767px){
+/*Faz os elementos ocuparem a primeira coluna, ajustando o layout para telas menores*/
     .wrapper{
         grid-column-start: 1;
         grid-column-end: 1;
     }
-    .area_foto{
+    .area_imagem{
         grid-column-start: 1;
         grid-column-end: 1;
     }
@@ -156,9 +165,4 @@ a:hover{
     }
 }
 
-@media screen and (min-width:768px){
-    footer,.container{
-        margin-bottom: 0 !important;
-        padding-bottom: 10px !important;
-    }
-}
+   

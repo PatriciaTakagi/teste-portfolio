@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Título da página-->
+    <!--Título da página que é exigibido na aba do navegador-->
     <title>Patricia Takagi-Portfólio</title>
-    <!--link de referencia ao arquivo de CSS externo-->
+    <!--link de referência para o arquivo de CSS externo-->
     <link rel="stylesheet" href="style.css">
+    <!--link de referência para o arquivo JavaScript externo -->
      <script src="script.js"></script>
 </head>
 <body>
-    <!--Cabeçalho da página-->
+    <!--Cabeçalho principal da página-->
     <header class="container">
         <h1>Patrícia Ayumi Takagi</h1>
         <br>
     </header>
 
+    <!--Menu com links de navegação entre as páginas do site-->
     <nav class="container menu">
         <ul>
             <li><a href="index.html">Sobre mim</a></li>
@@ -25,43 +27,50 @@
         </ul>
     </nav>
 
-   <div class="container wrapper">
-    <aside class="area_foto">
-        <img class="contato" src="images/e-mail.jpg" alt="Foto contato" >
-    </aside>
-    <section class="principal">
-        <h1>Contato</h1>
-        <h4>Dúvidas, sugestões, comentários ou novos projetos?<br> Entre em contato.<br>
-        Preencha o formulário abaixo: </h4><br>
-       <form id="formContato" action="" method="POST">
-          <table>
-            <tr>
-                <th><label for="nome">Nome:</label></th>
-                <td><input type="text" name="nome" id="nome"></td>
-            </tr>
-            <tr>
-                <th><label for="email">E-mail</label></th>
-                <td><input type="email" name="email" id="email"></td>
-            </tr>
-             <tr>
-                <th><label for="msg">Digite sua mensagem:</label></th>
-                <td><textarea name="msg" id="mensagem" rows="25" cols="40"></textarea></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><button type="button" onclick="enviarFormulario()" >Enviar</button></td>
-            </tr>
-          </table>
-       </form>
-    </section>
-   </div>
-   <br><br>
+   <!--Conteúdo principal da página dividido em imagem e formulário-->
+    <div class="container wrapper">
+        <!--Área lateral esquerda com imagem ilustrativa de contato-->
+        <aside class="area_imagem">
+             <img class="foto_contato" src="images/e-mail.jpg" alt="Foto contato" >
+        </aside>
+        <!--Conteúdo principal da página (formulário de contato)-->
+        <section class="principal">
+            <h1>Contato</h1>
+            <h4>Dúvidas, sugestões, comentários ou novos projetos?<br> Entre em contato.<br>
+            Preencha o formulário abaixo: </h4><br>
+            <!--Formulário de contato-->
+            <form id="formContato" action="" method="POST">
+                <table>
+                    <!--Campo para usuário digitar Nome-->
+                    <tr>
+                        <th><label for="nome">Nome:</label></th>
+                        <td><input type="text" name="nome" id="nome"></td>
+                    </tr>
+                    <!--Campo para usuário digitar E-mail-->
+                    <tr>
+                        <th><label for="email">E-mail</label></th>
+                        <td><input type="email" name="email" id="email"></td>
+                    </tr>
+                    <!--Campo para usuário digitar Mensagem-->
+                    <tr>
+                        <th><label for="msg">Digite sua mensagem:</label></th>
+                        <td><textarea name="msg" id="mensagem" rows="25" cols="40"></textarea></td>
+                    </tr>
+                    <!--Botão de envio do formulário-->
+                    <tr>
+                        <td></td>
+                        <td><button type="button" onclick="enviarFormulario()">Enviar</button></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </div>
+    <br><br>
 
-  <footer class="container">
-    <h2>Desenvolvido por Patricia Takagi- CST ADS Uninter 2026<br>ptakagiayumi@gmail.com</h2>
-   </footer>
-    
-
-    
+    <!--Rodapé da página-->
+    <footer class="container">
+        <h2>Desenvolvido por Patricia Takagi- CST ADS Uninter 2026<br>ptakagiayumi@gmail.com</h2>
+    </footer>
+      
 </body>
 </html>
